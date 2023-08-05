@@ -39,6 +39,7 @@ header {
   border: 1013px 96px;
   box-shadow: 20px solid black;
   transition: .5s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .06);
 }
 
 header.scrolled {
