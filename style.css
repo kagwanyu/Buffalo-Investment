@@ -33,7 +33,7 @@ header {
   top: 0;
   right: 0;
   align-items: centre;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   background-color: white;
   border: 1013px 96px;
@@ -52,13 +52,17 @@ header.scrolled {
 
 .logo {
   margin-right: auto;
+  }
 
-}
 
 .logo h2 {
   font-size: 1.7rem;
   font-weight: 700;
   color: var(--main-color);
+}
+
+.icon svg{
+  width: 100%;
 }
 
 .nav a {
@@ -73,6 +77,8 @@ header.scrolled {
   color: var(--main-color);
   border-bottom: 2px solid var(--main-color);
 }
+ /* mediarules */
+
 
 section {
    min-height: 100px; 
@@ -162,7 +168,13 @@ section .home {
   background-color: var(--main-color);
 
 }
+.image-res{
+  display: none;
+}
+      /* repsonsiverules */
+    
 
+     
 /* company section*/
 section.company {
 
@@ -178,7 +190,7 @@ section.company {
   margin-top: 45px;
   justify-content: flex-start;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 
@@ -257,6 +269,8 @@ section.company {
 .button .btn:hover {
   color: var(--main-color);
 }
+
+/* responsive rules */
 
 /*services*/
 section.services {
@@ -549,3 +563,142 @@ footer h1{
   margin-top: 0;
   padding: 50px;
 }
+
+
+.icon{
+  display: none;
+}
+.responsive
+{
+  display:none;
+}
+
+
+/* media rules */
+
+@media screen and (max-width:600px){
+
+  /* header  */
+  .header{
+    padding: 20px;
+  }
+  .nav{
+    /* display: block; */
+    right:0 ;
+   
+
+  }
+  .responsive{
+    /* display: block; */
+   } 
+  .icon{
+    margin-left: 15px;
+    width: 50%;
+    display: inline;
+    margin-top: 10px;
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  .nav a{
+    display: block;
+    display:none;
+   
+  }
+  .icon:hover {
+    background-color: #3366cc;
+    /* display: block; */
+    /* position: absolute; */
+    /* background-color: white; */
+  }
+
+  /* home */
+
+    .home{
+      display: block;
+      flex-wrap: wrap;
+
+    }
+    .home-image img{
+      display: none;
+      text-align: center;
+    }
+    .image-res{
+      padding: 0;
+      display: block;
+      margin-right: 15rem;
+      margin-top: 30px;
+      margin-bottom: 8rem;
+      height: 300px;
+      width: 300px;
+      color: var(--main-color);
+    }
+    .image-res img{
+      width: 100%;
+      
+      /* width: 560px;
+      height: 375px; */
+      margin-top: 30px;
+      border-radius: 300px 300px 300px 300px;
+      background-color: var(--main-color);
+      
+    
+    }
+    section {
+      min-height: 50vh;
+    }
+
+    /* comppany */
+  
+      section.company{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .company-box{
+        margin-top: 50px;
+      }
+      .services{
+        display: block;
+      }
+      .services-div{
+        display: block;
+      }
+      .text-services{
+        margin-bottom: 20px;
+      }
+      .services-pics{
+
+      }
+      .bg-cover{
+        height: 1000px;
+        width: 150px;
+        text-align: center;
+        display: none;
+        padding: 30px;
+      }
+      
+      .mini-pics {
+        
+        width:300px;
+        height: 50px;
+        
+        
+        display:block;
+        margin-top: 50px;
+        gap: 50px;
+        background-color: transparent;
+     
+      }
+
+      .mini-pics .consultancy {
+        background-color: aliceblue;
+        padding: 2rem;
+        margin-left: 40px;
+      }
+    }
+   
+  
+
+
+
+  
+ 
